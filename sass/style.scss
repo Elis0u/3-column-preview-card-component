@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+:root{
+    --brightOrange: hsl(31, 77%, 52%);
+    --darkCyan: hsl(184, 100%, 22%);
+    --veryDarkCyan: hsl(179, 100%, 13%);
+    --transparentWhite: hsla(0, 0%, 100%, 0.75);
+    --veryLightGray: hsl(0, 0%, 95%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 15px;
+
+    .card{
+        display: flex;
+        flex-direction: row;
+        width: 800px;
+        border-radius: 0.5rem;
+
+        .sedans{
+            background-color: var(--brightOrange);
+            border-radius: 0.5rem 0 0 0.5rem;
+            padding: 2.5rem;
+
+            button{
+               color: var(--brightOrange); 
+            }
+
+            button:hover{
+                background-color: var(--brightOrange);
+            }
+        }
+
+        .suv{
+            background-color: var(--darkCyan);
+            padding: 2.5rem;
+
+            button{
+                color: var(--darkCyan); 
+            }
+
+            button:hover{
+                background-color: var(--darkCyan);
+            }
+        }
+
+        .luxury{
+            background-color: var(--veryDarkCyan);
+            border-radius: 0 0.5rem 0.5rem 0;
+            padding: 2.5rem;
+
+            button{
+                color: var(--veryDarkCyan); 
+            }
+
+            button:hover{
+                background-color: var(--veryDarkCyan);
+            }
+        }
+
+        h1{
+            font-family: 'Big Shoulders Display', cursive;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--veryLightGray);
+            margin: 1.5rem 0;
+            font-size: 2.5rem;
+        }
+
+        p{
+            color: var(--transparentWhite);
+            line-height: 1.5rem;
+        }
+
+        button{
+            background-color: var(--veryLightGray);
+            width: 10rem;
+            height: 2.5rem;
+            border: none;
+            border-radius: 2rem;
+            margin-top: 3.5rem;
+            font-family: "Lexend Deca", sans-serif;
+        }
+
+        button:hover{
+            cursor: pointer;
+            border: 2px solid var(--veryLightGray);
+            color: var(--veryLightGray);
+        }
+    }
+}
+
+.attribution{ 
+    font-size: 11px; 
+    text-align: center; 
+    position: fixed;
+    bottom: 2%;
+
+    a{ 
+        color: hsl(228, 45%, 44%); 
+        text-decoration: none;
+    }
+}
